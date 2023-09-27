@@ -15,20 +15,18 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-
 const pages = ["Productos", "Compras", "Blog"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+
 
 function NavBar() {
+
+
+
   return (
     <AppBar sx={{ backgroundColor: "#FFB251" }} position="static">
       <Container sx={{ backgroundImage: "../" }} maxWidth="xl">
         <Toolbar disableGutters>
-          <img
-            style={{ width: "130px",}}
-            src={miImagen}
-            alt="Imagen de logo"
-          />
+          <img style={{ width: "130px" }} src={miImagen} alt="Imagen de logo" />
 
           <Typography
             variant="h6"
@@ -86,7 +84,7 @@ function NavBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block", fontWeight: "bold",  textTransform: "capitalize", fontFamily: "Poppins" }}
               >
                 {page}
               </Button>
@@ -94,32 +92,10 @@ function NavBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-           
-           
-           <Box>
-            <Carrito />
-           </Box>
-              
+            <Box>
+              <Carrito />
+            </Box>
 
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
           </Box>
         </Toolbar>
       </Container>
