@@ -1,12 +1,20 @@
 import React from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import Badge from '@mui/material/Badge';
 
-function Carrito({ cantidadElementos }) {
+import { Box, Typography } from '@mui/material';
+
+function Carrito() {
   return (
-    <Badge badgeContent={cantidadElementos} color="primary">
+    
+    <Box sx={{display: "flex"}}>
+      <Typography>
+        0
+      </Typography>
       <ShoppingCartIcon />
-    </Badge>
+    </Box>
+      
+      
+    
   );
 }
 

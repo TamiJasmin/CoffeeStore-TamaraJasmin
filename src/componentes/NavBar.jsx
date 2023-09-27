@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import Carrito from "./Carrito";
 import miImagen from "../images/logoCoffee.png";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -9,12 +9,12 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
+
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
+
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+
 
 const pages = ["Productos", "Compras", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -34,7 +34,6 @@ function NavBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -95,12 +94,12 @@ function NavBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Box sx={{ display: "flex" }}>
-              <Typography>0</Typography>
-              <ShoppingCartIcon
-                sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-              />
-            </Box>
+           
+           
+           <Box>
+            <Carrito />
+           </Box>
+              
 
             <Menu
               sx={{ mt: "45px" }}
