@@ -15,7 +15,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = ["Productos", "Compras", "Blog"];
+const pages = ["Productos", "Compras", "Blog",];
 
 
 function NavBar() {
