@@ -1,7 +1,6 @@
 import backgroundImage from "./images/coffeeBackground.jpg";
 import NavBar from "./componentes/NavBar";
-import Carrito from "./componentes/Carrito";
-import Home from "./componentes/Home";
+import ItemListCard from "./componentes/ItemListCard";
 import { Grid } from "@mui/material";
 
 const containerStyles = {
@@ -17,8 +16,8 @@ function App() {
   return (
     <Grid sx={containerStyles}>
       <NavBar />
-      <Carrito />
-      <Home />
+      
+      <ItemListCard />
     </Grid>
   );
 }
